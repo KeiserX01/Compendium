@@ -1,0 +1,38 @@
+{
+  "size": {
+    "w": 1500,
+    "h": 1036
+  },
+  "layers": [
+    {
+      "id": "default",
+      "name": "Default",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "markers": [],
+  "bases": [
+    {
+      "path": "Mapas/314040_UN.jpg"
+    }
+  ],
+  "overlays": [],
+  "activeBase": "Mapas/314040_UN.jpg",
+  "measurement": {
+    "displayUnit": "km",
+    "scales": {},
+    "customUnitPxPerUnit": {},
+    "travelTimePresetIds": [],
+    "travelDaysEnabled": false
+  },
+  "pinSizeOverrides": {},
+  "grids": [],
+  "panClamp": true,
+  "drawLayers": [],
+  "drawings": [],
+  "secondScreen": {
+    "showGrids": true
+  },
+  "textLayers": []
+}
