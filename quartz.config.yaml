@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: github.com/KeiserX01/Compendium.git
+  baseUrl: keiserx01.github.io/Compendium
   ignorePatterns:
     - private
     - templates
