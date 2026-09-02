@@ -267,16 +267,18 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: github:Requiae/quartz-leaflet-bases-plugin
-    enabled: true
-    options:
-      enableCopyTool: false
   - source: "@quartz-community/obsidian-plugin-excalidraw"
     enabled: true
     options:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
+    order: 50
+  - source: https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git
+    enabled: true
+    options:
+      enableCopyTool: false
+      enableFullscreenTool: true
     order: 50
 layout:
   groups:

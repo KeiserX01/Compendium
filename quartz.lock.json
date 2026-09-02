@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "plugins": {
-    "quartz-leaflet-bases-plugin": {
-      "source": "github:Requiae/quartz-leaflet-bases-plugin",
-      "resolved": "https://github.com/Requiae/quartz-leaflet-bases-plugin.git",
-      "commit": "48da13cf01ba6d742e616da2e837fd2a9478ac79",
-      "installedAt": "2026-09-02T14:54:02.139Z"
+    "Leaflet-Bases-Fullscreen-Quartz5": {
+      "source": "https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git",
+      "resolved": "https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git",
+      "commit": "85e2387d458b195f3d6ef9f2c62734e601f88b7c",
+      "installedAt": "2026-09-02T16:16:16.786Z"
     }
   }
 }
