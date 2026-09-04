@@ -1,0 +1,186 @@
+@use "./variables.scss" as *;
+
+// =============================================================================
+// Compendium Theme (cg- = Compendium General)
+// =============================================================================
+// Theme propio para la wiki Compendium.
+// Prefijo de tokens: `cg-` (Compendium General). Cuando definamos sub-temas
+// (ej. transformers para TTRPG, mapas, etc.) usaremos prefijos propios:
+//   tt-  → TTRPG (timeline, statblocks)
+//   mp-  → Maps (leaflet)
+//   ui-  → UI components (botones, tooltips)
+// =============================================================================
+
+:root {
+  // ---------- TOKENS: PALETA ----------
+  // cg-bg         → fondo de página
+  // cg-bg-elev    → fondo elevado (cards, paneles)
+  // cg-fg         → texto principal
+  // cg-fg-muted   → texto secundario
+  // cg-accent     → vino (links, headings)
+  // cg-accent-2   → dorado principal
+  // cg-accent-3   → dorado claro (hovers, detalles)
+  // cg-sidebar    → fondo de barras laterales
+  // cg-sidebar-fg → texto sobre sidebar
+  // cg-border     → bordes
+  // cg-highlight  → selección / fondos translúcidos
+  // cg-text-hl    → resaltado inline (markdown ==texto==)
+  --cg-bg: #e8dcc2;
+  --cg-bg-elev: #f0e6cf;
+  --cg-fg: #29231c;
+  --cg-fg-muted: #5d5142;
+  --cg-accent: #6f2927;
+  --cg-accent-2: #a98243;
+  --cg-accent-3: #c5a467;
+  --cg-sidebar: #211b17;
+  --cg-sidebar-fg: #c6b99d;
+  --cg-border: rgba(111, 86, 51, 0.35);
+  --cg-highlight: rgba(197, 164, 103, 0.22);
+  --cg-text-hl: rgba(197, 164, 103, 0.45);
+
+  // ---------- MAPPINGS A VARIABLES DE QUARTZ ----------
+  // Quartz usa su propio set de variables (--color-background, --color-text...).
+  // Las mapeamos a nuestros tokens para que componentes base (callouts,
+  // blockquotes, code, tablas) hereden la paleta sin tocar cada componente.
+  --color-background: var(--cg-bg);
+  --color-background-elevated: var(--cg-bg-elev);
+  --color-text: var(--cg-fg);
+  --color-text-muted: var(--cg-fg-muted);
+  --color-accent: var(--cg-accent);
+  --color-accent-2: var(--cg-accent-2);
+  --secondary: var(--cg-sidebar);
+  --tertiary: var(--cg-accent-3);
+  --highlight: var(--cg-highlight);
+  --textHighlight: var(--cg-text-hl);
+  --color-border: var(--cg-border);
+
+  // ---------- TIPOGRAFÍA (transición) ----------
+  // Por ahora delegamos a las defaults de Quartz (Schibsted Grotesk / Source
+  // Sans Pro). Cambio de tipografía se hace en otra iteración.
+  --headerFont: "Schibsted Grotesk", "Source Sans Pro", sans-serif;
+  --bodyFont: "Source Sans Pro", sans-serif;
+  --codeFont: "IBM Plex Mono", monospace;
+}
+
+:root[saved-theme="dark"] {
+  // ---------- TOKENS: PALETA OSCURA ----------
+  --cg-bg: #1a1410;
+  --cg-bg-elev: #2a221b;
+  --cg-fg: #e8dcc2;
+  --cg-fg-muted: #a89882;
+  --cg-accent: #a85a55;
+  --cg-accent-2: #c5a467;
+  --cg-accent-3: #d4b58a;
+  --cg-sidebar: #322820;
+  --cg-sidebar-fg: #e8dcc2;
+  --cg-border: rgba(169, 130, 67, 0.30);
+  --cg-highlight: rgba(197, 164, 103, 0.22);
+  --cg-text-hl: rgba(197, 164, 103, 0.45);
+
+  // re-mapeo (las variables Quartz siguen apuntando a nuestros tokens)
+  --color-background: var(--cg-bg);
+  --color-background-elevated: var(--cg-bg-elev);
+  --color-text: var(--cg-fg);
+  --color-text-muted: var(--cg-fg-muted);
+  --color-accent: var(--cg-accent);
+  --color-accent-2: var(--cg-accent-2);
+  --secondary: var(--cg-sidebar);
+  --tertiary: var(--cg-accent-3);
+  --highlight: var(--cg-highlight);
+  --textHighlight: var(--cg-text-hl);
+  --color-border: var(--cg-border);
+}
+
+// =============================================================================
+// ESTILOS BASE
+// =============================================================================
+// Sólo lo que no queda cubierto por el mapeo de variables anterior.
+// Si algo se rompe al cambiar de theme, el selector exacto va acá.
+// =============================================================================
+
+body {
+  font-family: var(--bodyFont);
+  color: var(--cg-fg);
+  background: var(--cg-bg);
+}
+
+// ---------- HEADINGS ----------
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cg-accent);
+  font-family: var(--headerFont);
+}
+
+// h1 dentro de article: el color principal lo maneja el componente ArticleTitle,
+// pero dejamos el fallback acá por si Quartz cambia el wrapper.
+article h1,
+.article-title h1 {
+  color: var(--cg-accent);
+}
+
+// ---------- LINKS ----------
+a {
+  color: var(--cg-accent);
+  text-decoration-color: var(--cg-accent-3);
+}
+
+a:hover {
+  color: var(--cg-accent-2);
+}
+
+// ---------- SIDEBAR ----------
+.sidebar,
+.left.sidebar,
+.right.sidebar {
+  background: var(--cg-sidebar);
+  color: var(--cg-sidebar-fg);
+}
+
+// ---------- CALLOUTS (OFM) ----------
+.callout {
+  background: var(--cg-bg-elev);
+  border-color: var(--cg-border);
+  color: var(--cg-fg);
+}
+
+.callout-title {
+  color: var(--cg-accent);
+}
+
+// ---------- BLOCKQUOTES ----------
+blockquote {
+  border-left: 3px solid var(--cg-accent-2);
+  background: var(--cg-highlight);
+  color: var(--cg-fg);
+}
+
+// ---------- CODE BLOCKS ----------
+code,
+pre {
+  font-family: var(--codeFont);
+  background: var(--cg-highlight);
+  color: var(--cg-fg);
+}
+
+pre {
+  border: 1px solid var(--cg-border);
+}
+
+// ---------- TABLAS ----------
+table {
+  border-color: var(--cg-border);
+}
+
+th {
+  color: var(--cg-accent);
+  border-bottom: 2px solid var(--cg-accent-2);
+}
+
+td {
+  border-bottom: 1px solid var(--cg-border);
+}
+
+// ---------- SELECCIÓN DE TEXTO ----------
+::selection {
+  background: var(--cg-text-hl);
+  color: var(--cg-fg);
+}
