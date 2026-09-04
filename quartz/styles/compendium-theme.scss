@@ -4,6 +4,16 @@
 // Compendium Theme (cg- = Compendium General)
 // =============================================================================
 // Theme propio para la wiki Compendium.
+//
+// Los valores de paleta base (--light, --darkgray, --secondary, etc.) se
+// inyectan desde `quartz.config.yaml` → `theme.colors.*` por el propio Quartz
+// (ver `quartz/util/theme.ts` → joinStyles). Este archivo agrega:
+//
+//   1. Tokens semánticos propios con prefijo `cg-*` para uso en plugins
+//      y estilos específicos que necesitemos escribir.
+//   2. Estilos por elemento (sidebar, callouts, blockquotes, code, tablas)
+//      que mapean a las variables de Quartz con la especificidad correcta.
+//
 // Prefijo de tokens: `cg-` (Compendium General). Cuando definamos sub-temas
 // (ej. transformers para TTRPG, mapas, etc.) usaremos prefijos propios:
 //   tt-  → TTRPG (timeline, statblocks)
@@ -12,106 +22,50 @@
 // =============================================================================
 
 :root {
-  // ---------- TOKENS: PALETA ----------
-  // cg-bg         → fondo de página
-  // cg-bg-elev    → fondo elevado (cards, paneles)
-  // cg-fg         → texto principal
-  // cg-fg-muted   → texto secundario
-  // cg-accent     → vino (links, headings)
-  // cg-accent-2   → dorado principal
-  // cg-accent-3   → dorado claro (hovers, detalles)
-  // cg-sidebar    → fondo de barras laterales
-  // cg-sidebar-fg → texto sobre sidebar
-  // cg-border     → bordes
-  // cg-highlight  → selección / fondos translúcidos
-  // cg-text-hl    → resaltado inline (markdown ==texto==)
-  --cg-bg: #e8dcc2;
-  --cg-bg-elev: #f0e6cf;
-  --cg-fg: #29231c;
-  --cg-fg-muted: #5d5142;
-  --cg-accent: #6f2927;
-  --cg-accent-2: #a98243;
-  --cg-accent-3: #c5a467;
-  --cg-sidebar: #211b17;
+  // ---------- TOKENS SEMÁNTICOS (cg-*) ----------
+  // Aliases de las variables de Quartz pero con nombres semánticos para
+  // que los plugins / componentes los consuman de forma explícita.
+  // Si Quartz cambia el nombre de una variable interna, solo cambiamos
+  // el alias acá.
+  --cg-bg: var(--light);
+  --cg-fg: var(--darkgray);
+  --cg-fg-muted: var(--gray);
+  --cg-accent: var(--dark);
+  --cg-accent-2: var(--tertiary);
+  --cg-sidebar: var(--secondary);
+  --cg-border: var(--lightgray);
+  --cg-highlight: var(--highlight);
+  --cg-text-hl: var(--textHighlight);
+
+  // Texto sobre sidebar: NO es una variable de Quartz, lo manejamos nosotros
+  // (Quartz no distingue entre texto principal y texto sobre sidebar).
   --cg-sidebar-fg: #c6b99d;
-  --cg-border: rgba(111, 86, 51, 0.35);
-  --cg-highlight: rgba(197, 164, 103, 0.22);
-  --cg-text-hl: rgba(197, 164, 103, 0.45);
-
-  // ---------- MAPPINGS A VARIABLES DE QUARTZ ----------
-  // Quartz usa su propio set de variables (--color-background, --color-text...).
-  // Las mapeamos a nuestros tokens para que componentes base (callouts,
-  // blockquotes, code, tablas) hereden la paleta sin tocar cada componente.
-  --color-background: var(--cg-bg);
-  --color-background-elevated: var(--cg-bg-elev);
-  --color-text: var(--cg-fg);
-  --color-text-muted: var(--cg-fg-muted);
-  --color-accent: var(--cg-accent);
-  --color-accent-2: var(--cg-accent-2);
-  --secondary: var(--cg-sidebar);
-  --tertiary: var(--cg-accent-3);
-  --highlight: var(--cg-highlight);
-  --textHighlight: var(--cg-text-hl);
-  --color-border: var(--cg-border);
-
-  // ---------- TIPOGRAFÍA (transición) ----------
-  // Por ahora delegamos a las defaults de Quartz (Schibsted Grotesk / Source
-  // Sans Pro). Cambio de tipografía se hace en otra iteración.
-  --headerFont: "Schibsted Grotesk", "Source Sans Pro", sans-serif;
-  --bodyFont: "Source Sans Pro", sans-serif;
-  --codeFont: "IBM Plex Mono", monospace;
 }
 
 :root[saved-theme="dark"] {
-  // ---------- TOKENS: PALETA OSCURA ----------
-  --cg-bg: #1a1410;
-  --cg-bg-elev: #2a221b;
-  --cg-fg: #e8dcc2;
-  --cg-fg-muted: #a89882;
-  --cg-accent: #a85a55;
-  --cg-accent-2: #c5a467;
-  --cg-accent-3: #d4b58a;
-  --cg-sidebar: #322820;
+  // Token propio de sidebar: lo cambiamos en oscuro porque necesita más
+  // luminosidad para mantener contraste sobre el carbón cálido.
   --cg-sidebar-fg: #e8dcc2;
-  --cg-border: rgba(169, 130, 67, 0.30);
-  --cg-highlight: rgba(197, 164, 103, 0.22);
-  --cg-text-hl: rgba(197, 164, 103, 0.45);
-
-  // re-mapeo (las variables Quartz siguen apuntando a nuestros tokens)
-  --color-background: var(--cg-bg);
-  --color-background-elevated: var(--cg-bg-elev);
-  --color-text: var(--cg-fg);
-  --color-text-muted: var(--cg-fg-muted);
-  --color-accent: var(--cg-accent);
-  --color-accent-2: var(--cg-accent-2);
-  --secondary: var(--cg-sidebar);
-  --tertiary: var(--cg-accent-3);
-  --highlight: var(--cg-highlight);
-  --textHighlight: var(--cg-text-hl);
-  --color-border: var(--cg-border);
 }
 
 // =============================================================================
-// ESTILOS BASE
+// ESTILOS POR ELEMENTO
 // =============================================================================
-// Sólo lo que no queda cubierto por el mapeo de variables anterior.
-// Si algo se rompe al cambiar de theme, el selector exacto va acá.
+// Sólo lo que no queda cubierto por las variables globales. Si algo se ve
+// mal, el selector exacto va acá.
 // =============================================================================
 
+// ---------- BODY ----------
 body {
-  font-family: var(--bodyFont);
-  color: var(--cg-fg);
   background: var(--cg-bg);
+  color: var(--cg-fg);
 }
 
 // ---------- HEADINGS ----------
 h1, h2, h3, h4, h5, h6 {
   color: var(--cg-accent);
-  font-family: var(--headerFont);
 }
 
-// h1 dentro de article: el color principal lo maneja el componente ArticleTitle,
-// pero dejamos el fallback acá por si Quartz cambia el wrapper.
 article h1,
 .article-title h1 {
   color: var(--cg-accent);
@@ -120,7 +74,7 @@ article h1,
 // ---------- LINKS ----------
 a {
   color: var(--cg-accent);
-  text-decoration-color: var(--cg-accent-3);
+  text-decoration-color: var(--cg-accent-2);
 }
 
 a:hover {
@@ -131,13 +85,86 @@ a:hover {
 .sidebar,
 .left.sidebar,
 .right.sidebar {
-  background: var(--cg-sidebar);
+  // Degradado vertical: arriba más claro, abajo color base.
+  // Corte por porcentajes para que la transición sea progresiva pero
+  // se asiente en el color sólido en la primera mitad de la sidebar.
+  // Modo claro:  #3a2c1f (arriba, +25% luminosidad) → #211b17 (base).
+  background: linear-gradient(
+    to bottom,
+    #3a2c1f 0%,
+    #2a2018 18%,
+    #211b17 35%,
+    #211b17 100%
+  );
   color: var(--cg-sidebar-fg);
+}
+
+:root[saved-theme="dark"] .sidebar,
+:root[saved-theme="dark"] .left.sidebar,
+:root[saved-theme="dark"] .right.sidebar {
+  // Modo oscuro: #42342a (arriba) → #322820 (base).
+  // Mismo corte por porcentajes para coherencia visual entre modos.
+  background: linear-gradient(
+    to bottom,
+    #42342a 0%,
+    #3a2c22 18%,
+    #322820 35%,
+    #322820 100%
+  );
+}
+
+// Aseguramos que TODO lo que está dentro de la sidebar herede el color correcto
+.sidebar *,
+.left.sidebar *,
+.right.sidebar * {
+  color: var(--cg-sidebar-fg);
+}
+
+// Excepción: links dentro de la sidebar pueden tener un acento
+.sidebar a,
+.left.sidebar a,
+.right.sidebar a {
+  color: var(--cg-accent-2);
+}
+
+.sidebar a:hover,
+.left.sidebar a:hover,
+.right.sidebar a:hover {
+  color: var(--cg-accent-3);
+}
+
+// ---------- ICONOS DE BOTONES EN SIDEBAR ----------
+// Toggle de darkmode, reader mode, etc. Tienen baja visibilidad porque
+// heredan el color del texto de sidebar. Los elevamos a dorado claro
+// para buen contraste sobre el carbón.
+// Nota: la clase de Quartz es "readermode" (sin guión), no "reader-mode".
+// También forzamos fill/stroke en los SVG porque algunos vienen con
+// fill="currentColor" o fill="none" propios.
+button.darkmode,
+button.readermode {
+  color: #d4b58a;
+}
+
+button.darkmode svg,
+button.readermode svg {
+  fill: #d4b58a;
+  stroke: #d4b58a;
+}
+
+button.darkmode:hover,
+button.readermode:hover {
+  color: var(--cg-accent-3);
+}
+
+button.darkmode:hover svg,
+button.readermode:hover svg {
+  fill: var(--cg-accent-3);
+  stroke: var(--cg-accent-3);
 }
 
 // ---------- CALLOUTS (OFM) ----------
 .callout {
-  background: var(--cg-bg-elev);
+  background: var(--cg-highlight);
   border-color: var(--cg-border);
   color: var(--cg-fg);
 }
@@ -153,7 +180,7 @@ blockquote {
   color: var(--cg-fg);
 }
 
-// ---------- CODE BLOCKS ----------
+// ---------- CODE ----------
 code,
 pre {
   font-family: var(--codeFont);
@@ -179,7 +206,7 @@ td {
   border-bottom: 1px solid var(--cg-border);
 }
 
-// ---------- SELECCIÓN DE TEXTO ----------
+// ---------- SELECCIÓN ----------
 ::selection {
   background: var(--cg-text-hl);
   color: var(--cg-fg);
