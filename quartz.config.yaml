@@ -280,9 +280,13 @@ plugins:
     order: 5
     layout:
       position: left
+<<<<<<< HEAD
       priority: 1   # Aparece arriba de todo en la sidebar
 #      position: left
 #      priority: 2   # Placeholder
+=======
+      priority: 1
+>>>>>>> 35efb29c4d46e5df02c8f4007961f6c1632d8d2c
 layout:
   groups:
     toolbar:
