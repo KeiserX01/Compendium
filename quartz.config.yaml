@@ -21,25 +21,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#e8dcc2"          # cg-bg: papel cálido (fondo página)
-        lightgray: "#3a2c1f"      # cg-border sobre fondo claro
-        gray: "#5d5142"           # cg-fg-muted: texto secundario
-        darkgray: "#29231c"       # cg-fg: texto principal (tinta)
-        dark: "#6f2927"           # cg-accent: vino (headings)
-        secondary: "#211b17"      # cg-sidebar: negro carbón
-        tertiary: "#a98243"       # cg-accent-2: dorado principal
-        highlight: "rgba(197, 164, 103, 0.22)"       # cg-highlight
-        textHighlight: "rgba(197, 164, 103, 0.45)"   # cg-text-hl
+        light: "#e8dcc2"
+        lightgray: "#3a2c1f"
+        gray: "#5d5142"
+        darkgray: "#29231c"
+        dark: "#6f2927"
+        secondary: "#211b17"
+        tertiary: "#a98243"
+        highlight: rgba(197, 164, 103, 0.22)
+        textHighlight: rgba(197, 164, 103, 0.45)
       darkMode:
-        light: "#1a1410"          # cg-bg oscuro: carbón cálido
-        lightgray: "#4a3a28"      # cg-border sobre fondo oscuro
-        gray: "#a89882"           # cg-fg-muted oscuro
-        darkgray: "#e8dcc2"       # cg-fg oscuro: papel
-        dark: "#a85a55"           # cg-accent oscuro: vino luminoso
-        secondary: "#322820"      # cg-sidebar oscuro: carbón cálido
-        tertiary: "#c5a467"       # cg-accent-2 oscuro: dorado suave
-        highlight: "rgba(197, 164, 103, 0.22)"
-        textHighlight: "rgba(197, 164, 103, 0.45)"
+        light: "#1a1410"
+        lightgray: "#4a3a28"
+        gray: "#a89882"
+        darkgray: "#e8dcc2"
+        dark: "#a85a55"
+        secondary: "#322820"
+        tertiary: "#c5a467"
+        highlight: rgba(197, 164, 103, 0.22)
+        textHighlight: rgba(197, 164, 103, 0.45)
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -274,6 +274,13 @@ plugins:
       enableCopyTool: false
       enableFullscreenTool: true
     order: 50
+  - source: https://github.com/KeiserX01/Compendium-Static-Components.git
+    enabled: true
+    options: {}
+    order: 5
+    layout:
+      position: left
+      priority: 1
 layout:
   groups:
     toolbar:
