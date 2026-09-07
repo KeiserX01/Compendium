@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "Compendium-Static-Components": {
+      "source": "https://github.com/KeiserX01/Compendium-Static-Components.git",
+      "resolved": "https://github.com/KeiserX01/Compendium-Static-Components.git",
+      "commit": "0b96fefa8defa950a71ae3ca717139d1b1eadc49",
+      "installedAt": "2026-09-07T13:49:15.849Z"
+    },
     "Leaflet-Bases-Fullscreen-Quartz5": {
       "source": "https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git",
       "resolved": "https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git",
