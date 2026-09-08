@@ -280,9 +280,7 @@ plugins:
     order: 5
     layout:
       position: left
-      priority: 1   # Aparece arriba de todo en la sidebar
-#      position: left
-#      priority: 2   # Placeholder
+      priority: 1
 layout:
   groups:
     toolbar:
