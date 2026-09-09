@@ -1,6 +1,6 @@
 ---
 title: Compendium
-darft: true
+darft: false
 ---
 # Registro General de la Campaña
 

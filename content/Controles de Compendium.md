@@ -1,6 +1,6 @@
 ---
 title: Controles de Compendium
-draft: true
+draft: false
 ---
 Los controles de Compendium son extremadamente simples e intuitivos. A continuacion presentamos una guia rapida de las funciones que este proyecto posee y como utilizarlas:
 
