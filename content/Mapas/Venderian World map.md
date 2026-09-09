@@ -1,6 +1,6 @@
 ---
 title: Venderian World map
-draft: false
+draft: true
 ---
 ```base
 views:
