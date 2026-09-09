@@ -1,4 +1,4 @@
 ---
-title:
-draft: true
+title: <% tp.file.title %>
+draft: false
 ---
