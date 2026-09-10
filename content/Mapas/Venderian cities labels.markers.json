@@ -1,0 +1,43 @@
+{
+  "size": {
+    "w": 11520,
+    "h": 6672
+  },
+  "layers": [
+    {
+      "id": "default",
+      "name": "Default",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "markers": [],
+  "bases": [
+    {
+      "path": "Mapas/Venderian cities labels.jpg",
+      "name": "Nombres de Ciudad"
+    },
+    {
+      "path": "Mapas/Venderian state labels.jpg",
+      "name": "Nombres de Paises"
+    }
+  ],
+  "overlays": [],
+  "activeBase": "Mapas/Venderian cities labels.jpg",
+  "measurement": {
+    "displayUnit": "km",
+    "scales": {},
+    "customUnitPxPerUnit": {},
+    "travelTimePresetIds": [],
+    "travelDaysEnabled": false
+  },
+  "pinSizeOverrides": {},
+  "grids": [],
+  "panClamp": true,
+  "drawLayers": [],
+  "drawings": [],
+  "secondScreen": {
+    "showGrids": true
+  },
+  "textLayers": []
+}

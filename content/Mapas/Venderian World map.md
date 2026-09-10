@@ -1,17 +1,19 @@
 ---
 title: Venderian World map
-draft: true
+draft: false
 ---
 ```base
 views:
   - type: leaflet-map
-    name: Venderian-worldmap
-    image: Pasted image 20260909125211.png
-    height: 400
-    minZoom: -1
-    maxZoom: 10
-    defaultZoom: -1.5
-    zoomDelta: 0.004544
-    scale: "0.2"
-    unit: feats
+    name: map
+    mapName: Venderian WorldMap
+    height: 480
+    image: [[Mapas/Venderian state labels.jpeg]]
+    minZoom: -3.6
+    maxZoom: 2
+    defaultZoom: -3.6
+    unit: Millas
+    layers:
+      - [[Mapas/Venderian cities labels.jpeg]]
+      - [[Mapas/Venderian 2026-06-07-12-50.jpeg]]
 ```
