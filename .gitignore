@@ -13,3 +13,5 @@ replit.nix
 quartz/cli/tui/dist/
 .turbo/
 TMP
+content/Misions/
+content/Templates/
