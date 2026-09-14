@@ -37,7 +37,7 @@ Lagymia es ampliamente reconocido como el estado más avanzado en materia de ing
 - Infraestructura comercial
 - Investigación mágica aplicada
 
-Estas capacidades han permitido al reino resistir repetidos intentos de invasión, incluidos conflictos recientes contra fuerzas vyknhodari.
+Estas capacidades han permitido al reino resistir repetidos intentos de invasión, incluidos conflictos recientes contra fuerzas Vyknhodari.
 
 **Tradición Académica y Controversias**
 
@@ -79,7 +79,7 @@ La administración chariana depende fuertemente del clero superior y del colegio
 Si Lagymia diseña y Char legitima, Givria transporta. El Reino de Givria controla la mayor red terrestre y marítima de distribución continental, incluyendo:
 
 - Puertos interhemisféricos
-- caravanas blindadas
+- Caravanas blindadas
 - Rutas fluviales fortificadas
 - Ciudades-mercado especializadas
 

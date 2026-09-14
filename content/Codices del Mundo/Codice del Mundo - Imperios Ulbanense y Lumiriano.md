@@ -13,7 +13,7 @@ Frente a este avance, dos potencias han asumido el rol de freno militar directo:
 - **Imperio Ulbanense**
 - **Imperio Lumiriano**
 
-Mientras la llamada Trinidad del Comercio mantiene una posición oficialmente neutral, son Ulbanense y Lumiriano quienes sostienen el frente oriental y evitan que la expansión vyknhodari se transforme en dominio continental.
+Mientras la llamada Trinidad del Comercio mantiene una posición oficialmente neutral, son Ulbanense y Lumiriano quienes sostienen el frente oriental y evitan que la expansión Vyknhodari se transforme en dominio continental.
 
 ## II. Imperio Ulbanense — La Fortaleza del Este
 
@@ -37,7 +37,7 @@ Si Ulbanense representa la fortaleza, Lumiriano representa la innovación. El Im
 - Dispositivos experimentales de combate
 - Sistemas de inteligencia y contrainteligencia
 
-Sus fuerzas armadas son menos numerosas que las vyknhodari, pero altamente especializadas y equipadas con tecnología considerada entre las más sofisticadas del continente. Lumiriano sostiene que la guerra moderna se decide antes del enfrentamiento directo: mediante información, precisión y superioridad tecnológica.
+Sus fuerzas armadas son menos numerosas que las Vyknhodari, pero altamente especializadas y equipadas con tecnología considerada entre las más sofisticadas del continente. Lumiriano sostiene que la guerra moderna se decide antes del enfrentamiento directo: mediante información, precisión y superioridad tecnológica.
 
 No obstante, la naturaleza experimental de algunos desarrollos ha generado debates éticos en foros internacionales.
 
@@ -61,7 +61,7 @@ La neutralidad declarada de Lagymia, Char y Givria no debe confundirse con aisla
 - Financiamiento indirecto mediante rutas comerciales
 - Acceso a innovación tecnológica lagymiana
 
-A su vez, la Trinidad depende de que la alianza oriental mantenga el avance vyknhodari lejos de los corredores comerciales principales. El equilibrio actual puede describirse como una interdependencia pragmática:
+A su vez, la Trinidad depende de que la alianza oriental mantenga el avance Vyknhodari lejos de los corredores comerciales principales. El equilibrio actual puede describirse como una interdependencia pragmática:
 
 - La Trinidad sostiene el flujo económico continental
 - Ulbanense y Lumiriano sostienen el equilibrio militar que permite dicho flujo
