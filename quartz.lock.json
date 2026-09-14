@@ -10,8 +10,8 @@
     "quartz-leaflet": {
       "source": "https://github.com/KeiserX01/quartz-leaflet.git",
       "resolved": "https://github.com/KeiserX01/quartz-leaflet.git",
-      "commit": "6e76b8e049364e1e41782f64171db6d6b10f58cf",
-      "installedAt": "2026-09-14T18:57:04.804Z"
+      "commit": "277448548ecce9154ea49f1274ee28c71015f70f",
+      "installedAt": "2026-09-14T20:13:45.612Z"
     }
   }
 }
