@@ -268,12 +268,6 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
-  - source: https://github.com/KeiserX01/Leaflet-Bases-Fullscreen-Quartz5.git
-    enabled: true
-    options:
-      enableCopyTool: false
-      enableFullscreenTool: true
-    order: 50
   - source: https://github.com/KeiserX01/Compendium-Static-Components.git
     enabled: true
     options: {}
@@ -281,6 +275,11 @@ plugins:
     layout:
       position: left
       priority: 1
+  - source: https://github.com/KeiserX01/quartz-leaflet.git
+    enabled: true
+    options:
+      enableCopyTool: false
+    order: 50
 layout:
   groups:
     toolbar:

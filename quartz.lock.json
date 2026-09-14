@@ -6,6 +6,12 @@
       "resolved": "https://github.com/KeiserX01/Compendium-Static-Components.git",
       "commit": "0fc7867f15bc8a0167fabb4286d96741290de8aa",
       "installedAt": "2026-09-08T20:58:06.962Z"
+    },
+    "quartz-leaflet": {
+      "source": "https://github.com/KeiserX01/quartz-leaflet.git",
+      "resolved": "https://github.com/KeiserX01/quartz-leaflet.git",
+      "commit": "6e76b8e049364e1e41782f64171db6d6b10f58cf",
+      "installedAt": "2026-09-14T18:57:04.804Z"
     }
   }
 }
