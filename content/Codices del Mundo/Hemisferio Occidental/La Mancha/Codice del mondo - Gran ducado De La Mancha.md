@@ -1,6 +1,6 @@
 ---
 title: Codice del mondo - Gran ducado De La Mancha
-draft: true
+draft: false
 ---
 # Gran Ducado de La Mancha
 
