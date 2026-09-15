@@ -15,6 +15,6 @@ views:
     unit: Km
     scale: 0.42
     layers:
-	    - Mapas/MapaMundi/Venderian cities labels.jpeg
-		- Mapas/MapaMundi/Venderian state.jpeg
+      - Mapas/MapaMundi/Venderian cities labels.jpeg
+	  - Mapas/MapaMundi/Venderian state.jpeg
 ```
