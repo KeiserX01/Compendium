@@ -4,7 +4,7 @@ darft: false
 ---
 # Registro General de la Campaña
 
-**Clasificación:** Archivo abierto  
+>**Clasificación:** Archivo abierto  
 **Estado:** En actualización  
 **Custodia:** El Alma de Cobalto
 
@@ -124,12 +124,12 @@ Una información aparentemente secundaria puede adquirir relevancia mucho despu�
 
 Por ello, este archivo no se limita a conservar lo que ya ha sucedido. **Su propósito es dejar constancia de cómo el mundo y sus personajes evolucionan a través de la historia.**
 
-**Archivo 0001 — Registro General**
-
-**Custodia:** El Alma de Cobalto  
+>**Archivo 0001 — Registro General**
+>
+>**Custodia:** El Alma de Cobalto  
 **Estado:** Abierto  
 **Última actualización:** —
-
+>
 > _Conservar el conocimiento es preservar el pasado._  
 > _Comprenderlo es construir el futuro._
 
