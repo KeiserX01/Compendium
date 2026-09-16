@@ -26,7 +26,7 @@ Desde entonces, el territorio se ha visto asediado por todos sus vecinos, ya sea
 
 Esta disposición territorial y política ha llevado al Gran Ducado de La Mancha a una curiosa anomalía: siendo la tercera nación más pequeña y la tercera menos poblada del hemisferio occidental, alberga el ejército más grande y más profesional de todas las naciones del territorio. Resulta sorprendente que semejante fuerza militar no haya alterado de forma significativa una economía frágil, apenas autosustentable cuando se llevan a cabo los reclutamientos masivos.
 
-El ejército permanente del Gran Ducado asciende actualmente a **124.750 soldados activos**, una cifra desproporcionada para los recursos y la población del territorio, que suma aproximadamente **499.000 habitantes**. Este gasto, lejos de resultar insostenible, está justificado por una consideración simple: el Gran Ducado de La Mancha posee una larga historia de incursiones e intentos de anexión por parte de sus vecinos, y su ejército constituye el único verdadero garante de su autonomía e independencia.
+El ejército permanente del Gran Ducado asciende actualmente a **80.000 soldados activos**, una cifra desproporcionada para los recursos y la población del territorio, que suma aproximadamente **650.000 habitantes**. Este gasto, lejos de resultar insostenible, está justificado por una consideración simple: el Gran Ducado de La Mancha posee una larga historia de incursiones e intentos de anexión por parte de sus vecinos, y su ejército constituye el único verdadero garante de su autonomía e independencia.
 
 ## IV. El Sistema de los Cantones
 
