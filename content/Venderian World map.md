@@ -8,13 +8,13 @@ views:
     name: map
     mapName: Venderian WorldMap
     height: 480
-    image: Mapas/Venderian state labels.jpeg
+    image: Mapas/mapa-mundi/Venderian state labels.jpeg
     minZoom: -3.6
     maxZoom: 2
     defaultZoom: -3.6
     unit: Km
     scale: 0.42
     layers:
-      - Mapas/Venderian cities labels.jpeg
-      - Mapas/Venderian 2026-06-07-12-50.jpeg
+      - Mapas/mapa-mundi/Venderian cities labels.jpeg
+	  - Mapas/mapa-mundi/Venderian state.jpeg
 ```

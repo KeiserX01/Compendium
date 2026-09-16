@@ -3,6 +3,8 @@
 
 *Extracto del compendio "Estados y Poderes del Continente Occidental" por Arkhavel Durn, Cátedra de Estudios Políticos Continentales, Academia de Letharis.*
 
+---
+
 El hemisferio occidental no constituye una entidad política unificada. No existe un imperio, confederación ni alianza formal que agrupe a sus estados. Sin embargo, a lo largo de generaciones se ha desarrollado un sistema de equilibrio institucional y cooperación pragmática que permite a los distintos territorios coexistir y prosperar dentro de un marco relativamente estable.
 
 Este equilibrio se sostiene sobre dos pilares fundamentales: la diversidad de modelos de gobierno y un conjunto de acuerdos políticos y económicos mantenidos por consenso entre las élites gobernantes.

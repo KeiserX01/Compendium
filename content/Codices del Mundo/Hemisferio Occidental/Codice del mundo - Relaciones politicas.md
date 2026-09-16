@@ -3,6 +3,8 @@
 
 *Extracto del compendio "Estados y Poderes del Continente Occidental" por Arkhavel Durn, Cátedra de Estudios Políticos Continentales, Academia de Letharis.*
 
+---
+
 El hemisferio occidental funciona como una red de dependencias económicas y políticas que, si bien no están formalmente organizadas en alianzas permanentes, generan un equilibrio relativamente estable entre sus estados. Ninguna nación domina completamente el sistema, pero varias poseen capacidades o posiciones estratégicas que les permiten ejercer influencia sobre el resto.
 
 Estas dinámicas producen rivalidades constantes, tensiones comerciales y disputas diplomáticas, aunque raramente escalan a conflictos abiertos debido a la fuerte interdependencia económica entre los distintos territorios.
