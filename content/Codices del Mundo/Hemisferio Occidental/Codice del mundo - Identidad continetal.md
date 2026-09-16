@@ -1,10 +1,6 @@
 # HEMISFERIO OCCIDENTAL
 ## Parte I — Identidad Continental
 
-*Extracto del compendio "Estados y Poderes del Continente Occidental" por Arkhavel Durn, Cátedra de Estudios Políticos Continentales, Academia de Letharis.*
-
----
-
 A diferencia de los grandes imperios orientales y del poder concentrado del Norte, el hemisferio occidental no se define por la expansión, la conquista ni la supremacía tecnológica. Su identidad surge de algo más sutil y, a la vez, más resistente: **la estabilidad prolongada**.
 
 Durante generaciones, los estados occidentales han convivido bajo un equilibrio imperfecto pero funcional. No existe un poder hegemónico absoluto, ni un conflicto abierto de escala continental. En su lugar, el continente se organiza en una red de ducados, reinos, teocracias y un único reino, todos entrelazados por comercio, diplomacia y una compleja tradición aristocrática.

@@ -1,4 +1,0 @@
----
-title: Toledo
-draft: true
----
